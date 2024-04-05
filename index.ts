@@ -28,7 +28,7 @@ class TodoApp {
         console.log(chalk.cyan('2. Update Todo'));
         console.log(chalk.cyan('3. Delete Todo'));
         console.log(chalk.cyan('4. View Todos'));
-        console.log(chalk.cyan('5. Mark Todo as Complete'));
+        console.log(chalk.cyan('5. Mark Todo as Complete/Incomplete'));
         console.log(chalk.red('0. Exit'));
     }
 
@@ -88,7 +88,7 @@ class TodoApp {
         const { id } = await inquirer.prompt<{ id: string }>({ // Change type to string
             type: 'input',
             name: 'id',
-            message: 'Enter the ID of the todo to mark as complete:'
+            message: 'Enter the ID of the todo to mark as complete/incomplete:'
         });
 
         const todoIndex = this.todos.findIndex(todo => todo.id === parseInt(id));
