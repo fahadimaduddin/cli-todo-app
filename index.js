@@ -1,3 +1,4 @@
+#! /usr/bin/env node 
 // Import necessary modules
 import inquirer from 'inquirer';
 import chalk from 'chalk';

@@ -1,6 +1,6 @@
 {
   "name": "@fahadimaduddin/cli-todo-app",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple CLI-based Todo app implemented using TypeScript and Node.js with the Inquirer library.",
   "main": "index.js",
   "type": "module",
